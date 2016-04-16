@@ -8,7 +8,7 @@ DEFINE a method scrabble, which takes as input a string (current list of availab
 
 def scrabble(letters)
 
-  #define our word database/dictionary to check for potential word combinations
+  #define our word database/dictionary to check for potential word combinations.
   dictionary = ["achievement","acid","action",
     "adventure","allspark","ammo","arpg","assassin",
     "asteroid","autosave","avatar","avenger","beta",
@@ -33,6 +33,8 @@ def scrabble(letters)
       letters = letters.split("").uniq
       word_letters = word.split("")
 
+      #for each word in our dictionary, we create a hash of each letter and the number of occurences in said word. This helps to avoid issues with duplicate letters in a word
+
       word_letters.each do |letter|
         if sorted_word_letters[letter].nil?
           sorted_word_letters[letter] = 1
@@ -40,6 +42,8 @@ def scrabble(letters)
           sorted_word_letters[letter] += 1
         end
       end
+
+      #just as we did with the given word, we take our scrabble letters and create a hash of each letter along with the number of that letter possessed
 
       letters.each do |letter|
         if sorted_jumbled_letters[letter].nil?

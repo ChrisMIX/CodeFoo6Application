@@ -1,11 +1,14 @@
 Task: The Avengers just made a surprise visit to San Francisco. How many legos would it take to rebuild the Golden Gate Bridge? Describe each step in your thought process.
 
+Long Story Short: Scaling up a rather big lego model of the bridge yielded an estimate of close to 10,000,000 bricks. Calculating by hand lead to an estimate of just over 174 billion bricks. Read on for specifics on the calculations and answer analysis.
 
 There are two ways of doing this. We could find accurate scaled down golden gate bridge, and scale it up, or we could calculate the area of the bridge by hand and divide by the area of a brick. Let's do both to keep things interesting.
 
 First the easy method. Surely enough, upon checking google there were two different models of the golden gate bridge I found. One was a proposed lego set, which is a 1:4444 scale model, and the other is a much larger model featured in The Museum of Science and Industry. We will use the larger model for a more acurrate estimation.
 
 The first model was made by a fellow Illinois resident Adam Reed Tucker. It took 64500 bricks to make and is 60 feet long. We can scale this up by dividing the length of the real thing by the model to find out ratio. The length of the real thing is 8976 feet/60 feet for the model gives us a scale of 149.6. If it took 64500 bricks to make the model, scaling that up means it would take around 9,649,200 bricks to make the real thing.
+
+The one concern here is that the bricks in this model were of varying sizes more than likely, and the estimation could be a bit low as a result.
 
 Source: https://www.dnainfo.com/chicago/20160310/hyde-park/64k-legos-used-build-golden-gate-bridge-now-at-science-industry-museum
 
@@ -21,7 +24,7 @@ Steps:
 
 Note: Dimensions and measurements acquired from goldengatebridge.org unless otherwise specified. Approximate estimations were given for measurements that weren't accessible.
 
-  1. The bridge portion is fairly straightforward. The bridge is 1.7 miles (107712 inches) by 90 feet (1080 inches) by 10 feet (120 inches). Multiplying these two dimensions together gives us 113959475200 inches cubed.
+  1. With this first question we will assume the bridge is flat. With that said, the bridge portion is fairly straightforward. The bridge is 1.7 miles (107712 inches) by 90 feet (1080 inches) by 1 inch. Multiplying these two dimensions together gives us 116328960 inches cubed.
 
   2. For the towers, I will simply take the dimensions of the legs of a single tower (396 x 648 x 8952 inches = 2297154816 inches cubed times two for both legs gives us 4594309632 inches cubed). For the cross sections connecting the legs, we take 54 feet x 90 feet x 25 feet. Converting this to inches gives us 1458000 inches cubed. Adding this together with the leg measuremets gives us 9191535264 inches cubed for both towers.
 
@@ -35,6 +38,10 @@ Note: Dimensions and measurements acquired from goldengatebridge.org unless othe
 
   With the hardest bits out of the way, let's find the volume of a 2 x 2 lego brick. Using the above source, the dimensions of the brick are 0.629921 by 0.629921 by 0.3771654 inches yielding 0.14965940657 inches cubed.
 
-  6. Now let's run the final calculation. We will take the total volume of the bridge and divide it by the volume of the brick for our final number. That final number is 934,683,932,925 bricks.
+  6. Now let's run the final calculation. We will take the total volume of the bridge and divide it by the volume of the brick for our final number. That final number is 174,002,403,784 bricks.
 
-  Ultimately the model is likely a much closer answer than this, but it is an interesting problem either way.
+  Ultimately scaling the model is likely to yield a much closer answer than the by hand calculation, but it is an interesting problem either way. The equations still fit the bill for the bridge, but the lack of all the proper numbers does create issues with accuracy.
+
+  Other fun things worth noting: A two story house of median size would allegedly take 10,079,829 bricks (of the 4 x 2 variety) to make. If this is at all accurate, the second number for the bridge is likely more accurate than the first, knowing how much bigger the golden gate bridge is.
+
+  http://www.movoto.com/blog/novelty-real-estate/build-your-house-out-of-legos/

@@ -11,6 +11,8 @@ My answers can be found in the various files mentioned below. Thanks for reading
 4(Back End). <br>
     a. This solution can be found in the keyboard.rb file <br>
     b. This solution can be found in the date_convert directory. The necessary calculations are found in date_convert/lib/date_convert/fix_date.rb
+    
+    The gem has been deployed to rubygems as well. Find it at https://rubygems.org/gems/date_convert
 
 
 

@@ -1,1 +1,40 @@
 Task: The Avengers just made a surprise visit to San Francisco. How many legos would it take to rebuild the Golden Gate Bridge? Describe each step in your thought process.
+
+
+There are two ways of doing this. We could find accurate scaled down golden gate bridge, and scale it up, or we could calculate the area of the bridge by hand and divide by the area of a brick. Let's do both to keep things interesting.
+
+First the easy method. Surely enough, upon checking google there were two different models of the golden gate bridge I found. One was a proposed lego set, which is a 1:4444 scale model, and the other is a much larger model featured in The Museum of Science and Industry. We will use the larger model for a more acurrate estimation.
+
+The first model was made by a fellow Illinois resident Adam Reed Tucker. It took 64500 bricks to make and is 60 feet long. We can scale this up by dividing the length of the real thing by the model to find out ratio. The length of the real thing is 8976 feet/60 feet for the model gives us a scale of 149.6. If it took 64500 bricks to make the model, scaling that up means it would take around 9,649,200 bricks to make the real thing.
+
+Source: https://www.dnainfo.com/chicago/20160310/hyde-park/64k-legos-used-build-golden-gate-bridge-now-at-science-industry-museum
+
+With the easy part done, let's attempt to calculate the number of bricks needed the hard way.
+
+Steps:
+  1. Find the volume of the bridge portion (the part of the bridge that people drive across.)
+  2. Find the volume of the two main towers that hold the cables up
+  3. Find the volume of the horizontal cables
+  4. Find the volume of the vertical cables
+  5. Find the volume of a 2 x 2 lego brick.
+  6. Take the combined volume of each portion of the bridge and divide by the volume of the lego brick. The result is an estimate of how many lego bricks you would need.
+
+Note: Dimensions and measurements acquired from goldengatebridge.org unless otherwise specified. Approximate estimations were given for measurements that weren't accessible.
+
+  1. The bridge portion is fairly straightforward. The bridge is 1.7 miles (107712 inches) by 90 feet (1080 inches) by 10 feet (120 inches). Multiplying these two dimensions together gives us 113959475200 inches cubed.
+
+  2. For the towers, I will simply take the dimensions of the legs of a single tower (396 x 648 x 8952 inches = 2297154816 inches cubed times two for both legs gives us 4594309632 inches cubed). For the cross sections connecting the legs, we take 54 feet x 90 feet x 25 feet. Converting this to inches gives us 1458000 inches cubed. Adding this together with the leg measuremets gives us 9191535264 inches cubed for both towers.
+
+  3. For the horizontal cables we take the area of the circle (given diameter), and multiply that by the length of the cable. In other words, the volume of the cable is (pi * ((291/8) squared) * 91800 inches) yields 381591382.006 inches cubed for one cable. Two of them is thus 763182764.012 inches cubed.
+
+  4. Source: http://www.slideshare.net/IenaNoAi/eiffel-tower-and-golden-gate-bridge-facts-and-information
+
+  The vertical cables are slightly trickier, since they are of varying heights. The middle suspension cable is actually a parabola, which makes finding the measurements we need slightly more bearable. The equation is Y = 0.000112x² + b. In this case b is the height of the lowest point of the curve from the bridge and x is the distance from the center. Let's initialize b at zero for lack of a proper number. the cables are 50 feet apart in both directions, and there are 250 pairs of them, so let's get the heights and volumes of 125 of these cables, and we can simply multiply the sum of those volumes by 4 since the bridge has 500 cables total. For this more time consuming equation I wrote a program (found in the bridge.rb file) to get the proper numbers for me. It's a loop that runs the equation until I tell it to stop. Running this yields 15970049504.101341 inches cubed.
+
+  5. Source: http://sparxmind.com/lego-woes/
+
+  With the hardest bits out of the way, let's find the volume of a 2 x 2 lego brick. Using the above source, the dimensions of the brick are 0.629921 by 0.629921 by 0.3771654 inches yielding 0.14965940657 inches cubed.
+
+  6. Now let's run the final calculation. We will take the total volume of the bridge and divide it by the volume of the brick for our final number. That final number is 934,683,932,925 bricks.
+
+  Ultimately the model is likely a much closer answer than this, but it is an interesting problem either way.

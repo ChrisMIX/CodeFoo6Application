@@ -1,4 +1,4 @@
-# CodeFoo6Application
+# Code-Foo 6 Application
 
 This is my application to IGN's Code-Foo 6 program.
 

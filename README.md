@@ -9,7 +9,7 @@ My answers can be found either below or in the file listed below. Thanks for rea
 3. This solution can be found in the scrabble.rb file
 
 4(Back End). <br>
-  a. This solution can be found in the keyboard.rb file
+  a. This solution can be found in the keyboard.rb file <br>
   b. This solution can be found in the date_convert directory
 
 
